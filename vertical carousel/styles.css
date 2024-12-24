@@ -1,0 +1,249 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 120%;
+ 
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+  
+}
+
+/* Slides Container */
+.slides {
+  display: flex;
+  flex-direction: column;
+  height: 500%; /* Total height = 5 slides (including duplicate) * 100% */
+  transition: transform 1s ease;
+}
+
+.slide {
+  width: 100%;
+  height: 150vh; /* Full-screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  
+}
+.text-1,.text-2,.text-3,.text-4{
+  color: #414F5D;
+  font-size: large;
+  text-align: left;
+  padding: 60px;
+ }
+/* Background colors for slides */
+.slide1 { background-color:#1a3e39; }
+.slide2 { background-color: #ffffff; }
+.slide3 { background-color:#1a3e39; }
+.slide4 { background-color: #ffffff; }
+
+
+
+
+
+  /* ////////////////////////// */
+  .text-1{
+    margin-top: 3%;
+    color: white;
+    margin-left: -20px;
+   }
+   .text-1 h2{
+    font-size: 60px;
+    font-weight:500;
+    
+   }
+   .text-1 h1{
+    font-size: 70px;
+    font-weight:100;
+    margin-top: 6px;
+   }
+   .text-1 p{
+    margin-top: 20px;
+    padding-right: 15%;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+   }
+   #id-1{
+    height: 800px;
+    padding-top: 30px ;
+    padding-left: 40px;
+  }
+  
+   /* ////////////////////////// */
+   .text-2{
+    margin-top: 3%;
+   }
+   .text-2 h2{
+    font-size: 60px;
+    font-weight:500;
+   }
+   .text-2 h1{
+    font-size: 70px;
+    font-weight:100;
+    
+   }
+   .text-2 p{
+    margin-top: 30px;
+    line-height: 25px;
+    padding-right: 10px;
+    font-size: 19px;
+   }
+  
+   #id-2{
+    margin-top:5%;
+    height: 350px;
+    padding-left: -20%;
+    margin-left: -20%;
+   }
+  
+  
+    /* ////////////////////////// */
+   .text-3{
+    margin-top: 2%;
+    margin-left: -5%;
+    color: white;
+   }
+   .text-3 h2{
+    font-size: 60px;
+    font-weight:500;
+   }
+   .text-3 h1{
+    font-size: 70px;
+    font-weight:100;
+    text-wrap: nowrap;
+    
+   }
+   .text-3 p{
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 19px;
+    padding-right: 15%;
+    color: rgb(230, 230, 230);
+   }
+ 
+   #id-3{
+    height: 380px;
+    padding-top:10% ;
+    padding-left: 80px;
+   }
+  
+    /* ////////////////////////// */
+    .text-4{
+          padding-left: 7%;
+     }
+     .text-4 h2{
+      font-size: 60px;
+    font-weight:500;
+     }
+     .text-4 h1{
+      font-size: 70px;
+      font-weight:100;
+      
+     }
+     .text-4 p{
+      margin-top: 20px;
+      padding-right: 10%;
+      line-height: 25px;
+      font-size: 19px;
+     }
+   
+     #id-4{
+      margin-top: 15%;
+      height: 500px;
+      margin-left: -15%; 
+     
+     }
+  
+  
+  
+/* Vertical Bars on the Right */
+.vertical-bars {
+  
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3) 10px,
+    rgba(0, 0, 0, 0.2) 10px,
+    rgba(0, 0, 0, 0.2) 20px
+  );
+  z-index: 2;
+}
+
+/* Play/Pause Button */
+
+.play-pause-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #ffffff;
+  position: fixed;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 4;
+}
+
+.play-pause-btn:hover {
+  background-color: #555;
+  overflow: hidden;
+}
+
+
+.hidden{
+  opacity:0;
+  transition: .5s;
+
+}
+.carousel-container:hover .play-pause-btn.hidden{
+  opacity: 1;
+  pointer-events: auto; /* Enable click when visible */
+}
+
+/* Navigation Dots */
+.navigation-dots {
+  position: absolute;
+  bottom: 35%;
+  left: 95%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.dot {
+ 
+  width: 4px;
+  height: 60px;
+  background-color: #4f4f4f;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.dot.active {
+  background-color:#b1b1b1;
+}

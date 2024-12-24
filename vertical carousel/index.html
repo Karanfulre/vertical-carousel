@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Looping Carousel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="carousel-container">
+    <!-- Slides -->
+    <div class="slides">
+
+      <div class="slide slide1" id="bg-green">
+        <div><img id="id-1" src="/Group-15923-1.png"></div>
+        <div class="text-1">
+          <h2>Unsere Projekte</h2>
+          <h1>in Deutschaland</h1> 
+          <p> Die auf unserer Website dargestellten Projektstandorte sind ungefähre Angaben und können aufgrund der räumlichen Nähe einiger Projekte überlappen oder nicht exakt wiedergegeben werden. Wir bemühen uns um Genauigkeit, können jedoch keine absolute Präzision garantieren.</p> 
+          <p>Letzte Aktualisierung: 05.08.2024</p></div>
+     </div>
+
+      <div class="slide slide2">
+        <div class="text-2">
+        <h2>Unsere Projekte</h2>
+        <h1>in Österreich</h1> 
+        <p> Unsere Projekte in Österreich sind darauf ausgerichtet, die Solarenergieinfrastruktur des Landes zu stärken und nachhaltige Energielösungen voranzutreiben. Wir arbeiten eng mit lokalen Partnern zusammen, um innovative und effiziente Solaranlagen zu realisieren, die einen positiven Beitrag zur Energiewende in Österreich leisten.
+        </p> 
+     </div>
+
+         <div><img id="id-2" src="/Group-15791-2.png"></div>
+  </div>
+      <div class="slide slide3" id="bg-green"> 
+        <div><img id="id-3" src="/Group-15801-3.png"></div>
+      <div class="text-3">
+           <h2>Unsere Projekte</h2>
+           <h1>in der Schweiz</h1> 
+           <p> Seit Anfang dieses Jahres ist NIVOMA auch in der Schweiz aktiv. Unsere Projekte in der Schweiz setzen neue Maßstäbe in Sachen Nachhaltigkeit und Effizienz. Mit modernster Technologie und maßgeschneiderten Lösungen realisieren wir erfolgreiche Solarprojekte, die sowohl ökologisch als auch ökonomisch überzeugen. Gemeinsam mit unseren Partnern gestalten wir eine grüne Zukunft in der Schweiz und bieten Verpächtern und Investoren attraktive Möglichkeiten zur Energiegewinnung.</p> 
+           <p> Letzte Aktualisierung: 05.08.2024</p></div>
+          </div>
+      <div class="slide slide4">
+        <div class="text-4">
+        <h2>Anstehende Projekte</h2>
+        <h1>den USA</h1> 
+        <p>In den kommenden Monaten expandiert NIVOMA in die USA, um dort innovative Solarprojekte zu realisieren. Unsere anstehenden Projekte sind darauf ausgelegt, die Potenziale erneuerbarer Energien auf dem nordamerikanischen Markt voll auszuschöpfen. Mit einem klaren Fokus auf Nachhaltigkeit und Effizienz werden wir maßgeschneiderte Lösungen anbieten, die sowohl den wirtschaftlichen als auch den ökologischen Anforderungen gerecht werden. Durch diese Expansion schaffen wir neue Chancen für Investoren und Verpächter, die von der wachsenden Nachfrage nach sauberer Energie in den USA profitieren möchten.</p>
+     </div>
+     <div><img id="id-4" src="/Group-15798-4.png"></div></div>
+    </div>
+    <!-- Vertical Bars -->
+    <div class="vertical-bars"></div>
+    <!-- Play/Pause Button -->
+    
+   <button id="play-pause-btn" class="play-pause-btn hidden"  >Pause</button>
+    <!-- Navigation Dots -->
+    <div class="navigation-dots">
+      <div class="dot active" data-index="0"></div>
+      <div class="dot" data-index="1"></div>
+      <div class="dot" data-index="2"></div>
+      <div class="dot" data-index="3"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
